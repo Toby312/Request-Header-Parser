@@ -7,7 +7,7 @@ function App() {
   const[fromButtonClick, setFromButtonClick] = useState('')
 
   const handleClick1 = ()=>{
-    setFromButtonClick('http://localhost:4000/api/whoami')
+    setFromButtonClick(process.env.API_URL)
   }
 
   const handleClick2 = ()=>{
