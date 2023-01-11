@@ -7,7 +7,8 @@ function App() {
   const[fromButtonClick, setFromButtonClick] = useState('')
 
   const handleClick1 = ()=>{
-    setFromButtonClick(process.env.API_URL)
+    setFromButtonClick(process.env.REACT_APP_API_URL
+      )
   }
 
   const handleClick2 = ()=>{
